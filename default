@@ -31,14 +31,13 @@ https://tutorialwithproject.com/installing-the-required-libraries-in-aws/
 
 module.exports = {
   apps : [{
-    name: 'Admin-Cricket',
+    name: 'My_New_App',
     script: 'manage.py',
-    args: 'runserver 0.0.0.0:5001',
+    args: 'runserver 0.0.0.0:9191',
     instances: 1,
     autorestart: true,
     watch: false,
     max_memory_restart: '1G',
-    interpreter:'/usr/bin/python3'
   }]
 };
 
