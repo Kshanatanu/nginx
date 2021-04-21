@@ -25,5 +25,20 @@ server {
 	#}
 }
 
-
+=========================================================>>> nginx hard binding with localhost  <<================================================================
 https://tutorialwithproject.com/installing-the-required-libraries-in-aws/
+=============================================>>ecosystem.config.js  <<===========================================================================================
+
+module.exports = {
+  apps : [{
+    name: 'Admin-Cricket',
+    script: 'manage.py',
+    args: 'runserver 0.0.0.0:5001',
+    instances: 1,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+    interpreter:'/usr/bin/python3'
+  }]
+};
+
